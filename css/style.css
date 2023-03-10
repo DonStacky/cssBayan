@@ -85,7 +85,10 @@ svg {
         font-size: 1.5rem;
     }
     .mem__img {
-        width: 50%;
+        width: 30%;
+    }
+    svg {
+        transform: scale(2);
     }
     .accourdion__mem:hover label svg{
         transform: rotate(180deg) scale(2);
@@ -103,7 +106,7 @@ svg {
         font-size: 2rem;
     }
     .mem__img {
-        width: 40%;
+        width: 20%;
     }
     svg {
         transform: scale(3);
