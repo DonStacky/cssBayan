@@ -4,7 +4,7 @@ body {
 
 svg {
     display: block;
-    /* opacity: 0; */
+    opacity: 0;
     transition: 0.5s;
     width: 10px;
     margin-top: -1em;
@@ -42,8 +42,9 @@ svg {
     width: 100%;
 }
 
-.mem__title:hover {
+@media (hover: hover) {.mem__title:hover {
     color: blue;
+}
 }
 
 .mem__input {
@@ -62,23 +63,23 @@ svg {
 .mem__input:checked ~ .mem__title {
     color: blue;
 }
-.accourdion__mem:hover label .mem__img {
+@media (hover: hover) {.accourdion__mem:hover label .mem__img {
     height: auto;
     transform: scaleY(1);
-}
+}}
 
-.accourdion__mem:hover label svg{
+@media (hover: hover) {.accourdion__mem:hover label svg{
     transform: rotate(180deg);
     fill: blue;
-}
+}}
 
-.accourdion:hover .accourdion__mem .mem__title {
+@media (hover: hover) {.accourdion:hover .accourdion__mem .mem__title {
     color: blue;
-}
+}}
 
-.accourdion:hover .accourdion__mem svg {
+@media (hover: hover) {.accourdion:hover .accourdion__mem svg {
     opacity: 1;
-}
+}}
 
 @media (min-width: 820px) {
     .accourdion {
@@ -97,9 +98,9 @@ svg {
     svg {
         transform: scale(2);
     }
-    .accourdion__mem:hover label svg{
+    @media (hover: hover) {.accourdion__mem:hover label svg{
         transform: rotate(180deg) scale(2);
-    }
+    }}
     .mem__input:checked ~ label svg {
         transform: rotate(180deg) scale(2);
     }
@@ -122,16 +123,14 @@ svg {
     svg {
         transform: scale(3);
     }
-    .accourdion__mem:hover label svg{
+    @media (hover: hover) {.accourdion__mem:hover label svg{
         transform: rotate(180deg) scale(3);
-    }
+    }}
     .mem__input:checked ~ label svg {
         transform: rotate(180deg) scale(3);
     }
 }
 
-@media screen {
     .mem__title, .mem__input, .accourdion__mem {
         cursor: pointer;
     }
-}
