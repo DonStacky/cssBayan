@@ -79,17 +79,44 @@ svg {
 
 @media (min-width: 820px) {
     .accourdion__title {
+        font-size: 2.5rem;
+    }
+    .mem__title {
+        font-size: 1.5rem;
+    }
+    .mem__img {
+        width: 50%;
+    }
+    .accourdion__mem:hover label svg{
+        transform: rotate(180deg) scale(2);
+    }
+    .mem__input:checked ~ label svg {
+        transform: rotate(180deg) scale(2);
+    }
+}
+
+@media (min-width: 1920px) {
+    .accourdion__title {
         font-size: 3rem;
     }
     .mem__title {
         font-size: 2rem;
     }
     .mem__img {
-        width: 70%;
+        width: 40%;
+    }
+    svg {
+        transform: scale(3);
+    }
+    .accourdion__mem:hover label svg{
+        transform: rotate(180deg) scale(3);
+    }
+    .mem__input:checked ~ label svg {
+        transform: rotate(180deg) scale(3);
     }
 }
 
-@media (min-width: 1000px) {
+@media screen {
     .mem__title, .mem__input, .accourdion__mem {
         cursor: pointer;
     }
