@@ -77,6 +77,17 @@ svg {
     opacity: 1;
 }
 
+@media (min-width: 820px) {
+    .accourdion__title {
+        font-size: 3rem;
+    }
+    .mem__title {
+        font-size: 2rem;
+    }
+    .mem__img {
+        width: 70%;
+    }
+}
 
 @media (min-width: 1000px) {
     .mem__title, .mem__input, .accourdion__mem {
