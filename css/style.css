@@ -1,0 +1,41 @@
+body {
+    background-color: beige;
+}
+
+.accourdion {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mem__img {
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    width: 50%;
+    margin: 1% auto;
+    transition: 0.3s;
+}
+
+.mem__title, .mem__input, .accourdion__mem {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mem__input {
+    appearance: none;
+}
+
+.mem__title:hover {
+    color: blue;
+}
+
+.mem__input:checked + .mem__img {
+    height: auto;
+    transform: scaleY(1);
+}
+
+.accourdion__mem:hover>.mem__img {
+    height: auto;
+    transform: scaleY(1);
+}
